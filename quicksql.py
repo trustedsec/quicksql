@@ -40,6 +40,7 @@ args = vars(ap.parse_args())
 password = args['password']
 if password == 'blank': password = ""
 
+# if a blank database is specified
 database = args['database']
 if database == 'blank': database = ""
 
@@ -70,6 +71,7 @@ if conn:
             try:
                 cursor.execute(execute_command)
                 for row in cursor: print(row)
+                  
             # if we run into an exception
             except Exception as error:
                 print("\n[!] The SQL Server returned an error. Printing below: ")
