@@ -30,12 +30,13 @@ QuickSQL is a simple MSSQL query tool that allows you to connect to a SQL server
 There are two files, the quicksql.py which is the source code for quicksql and can be run on anything that has Python3 installed on it. The second is quicksql.exe which can be run on Windows operating systems.
 
 Example:\
-\
-quicksql.exe -ip 192.168.5.5 -db blank -un test -pw test -port 1433\
-\
-Or run help for the parameter names:\
-\
+<pre>
+quicksql.exe -ip 192.168.5.5 -db blank -un test -pw test -port 1433
+
+Or run help for the parameter names:
+
 quicksql.exe -h
+</pre>
 
 ## Compiling Python to Executable
 
