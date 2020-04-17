@@ -35,4 +35,4 @@ quicksql.exe -ip 192.168.5.5 -db blank -un test -pw test -port 1433\
 \
 Or run help for the parameter names:\
 \
-quicksql.exe -h\
+quicksql.exe -h
