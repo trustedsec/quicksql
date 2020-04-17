@@ -3,6 +3,8 @@
                                                               
 QuickSQL - a lightweight MSSQL connection and query tool that does not require  administrative level rights. Quick explanation on why this was useful. On a penetration, compromised a system under the context of a user account. When pillaging, found a web.config which contained high level SQL accounts. Needed to query SQL directly (for xp_cmdshell specifically) on the Windows machine and without administrator level rights. This works through the pymssql modules within Python and compiled using PyInstaller. Allows you to use the Python MSSQL modules directly on Windows in a compiled binary without the need of Python or administrative level rights. 
 
+## Usage
+
 Written by: David Kennedy (@HackingDave)
 Company: TrustedSec (@TrustedSec)
 usage: quicksql.py [-h] [-db DATABASE] -un USERNAME -pw PASSWORD -ip IPADDRESS
