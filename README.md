@@ -5,7 +5,7 @@ QuickSQL - a lightweight MSSQL connection and query tool that does not require  
 
 Why write another MSSQL query tool?
 
-On a penetration, compromised a system under the context of a user account. When pillaging, found a web.config which contained high level SQL accounts. Needed to query SQL directly (for xp_cmdshell specifically) on the Windows machine and without administrator level rights. This works through the pymssql modules within Python and compiled using PyInstaller. Allows you to use the Python MSSQL modules directly on Windows in a compiled binary without the need of Python or administrative level rights. 
+On an engagement, there was a compromised a system under and under the context of a regular user account. When pillaging, found a web.config which contained high level SQL accounts. Needed to query SQL directly (for xp_cmdshell specifically) on the Windows machine that was compromised and without administrator level rights (no SOCKS proxying etc). This works through the pymssql modules within Python and compiled using PyInstaller. Allows you to use the Python MSSQL modules directly on Windows in a compiled binary without the need of Python or administrative level rights. 
 
 ## Usage
 <pre>
