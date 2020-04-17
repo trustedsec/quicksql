@@ -36,3 +36,16 @@ quicksql.exe -ip 192.168.5.5 -db blank -un test -pw test -port 1433\
 Or run help for the parameter names:\
 \
 quicksql.exe -h
+
+## Compiling Python to Executable
+
+If you want to create your own binary directly from the Python code, follow these next steps:
+
+<pre>
+1. Download the latest version of Python for Windows. When installing, ensure that you add the Python path to your command line arguments.
+2. Download the latest version of PyInstaller and unzip the folder. https://github.com/pyinstaller/pyinstaller/zipball/develop
+3. Copy quicksql.py to the PyInstaller folder.
+4. Install pymssql and pywin32 and pywin32-ctypes by typing: python -m pip install pymssql pywin32 pywin32-ctypes.
+5. Run the following command: python pyinstaller.py --onefile quicksql.py.
+6. Navigate to quicksql/dist and your execuable is there.
+</pre>
