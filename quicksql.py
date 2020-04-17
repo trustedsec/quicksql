@@ -47,7 +47,8 @@ if database == 'blank': database = ""
 try:
     if database != "":
         conn = pymssql.connect("{0}:{1}".format(args['ipaddress'],args['port']), args['username'], password, database)
-    else: conn = pymssql.connect("{0}:{1}".format(args['ipaddress'],args['port']), args['username'], password)
+    else:
+        conn = pymssql.connect("{0}:{1}".format(args['ipaddress'],args['port']), args['username'], password)
 
 except pymssql.OperationalError as error:
     print("[!] There was a connection error to the MSSQL server. Printing the error below : ")
@@ -60,7 +61,10 @@ if conn:
     cursor = conn.cursor()
     while 1:
         execute_command = input(str(database) + ">")
-        if execute_command in ["quit", "exit"]: break
+        # quit out of quicksql
+        if execute_command in ["quit", "exit"]: 
+            break
+
         # execute the sql query here
         else:
             try:
