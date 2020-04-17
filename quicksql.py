@@ -29,7 +29,7 @@ print("Company: TrustedSec (@TrustedSec)")
 
 # parse the options for the tool
 ap = argparse.ArgumentParser()
-ap.add_argument("-db", "--database" , required=False, help="Database you are selecting to connect to.")
+ap.add_argument("-db", "--database" , required=False, help="Database you are selecting to connect to. Type blank for no database.")
 ap.add_argument("-un", "--username", required=True, help="The username to specify to authenticate to the database.")
 ap.add_argument("-pw", "--password", required=True, help="The password for the database. Type blank to authenticate without a password.")
 ap.add_argument("-ip", "--ipaddress", required=True, help="The IP address or hostname of the remote SQL server.")
